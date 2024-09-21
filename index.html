@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mubleria brafer</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        /* Estilos para el botón flotante y el texto "Contáctanos" */
+        .floating-contact {
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .floating-contact h2 {
+            background-color: gray;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            font-size: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#section-1">Inicio</a></li>
+                <li><a href="#section-2">Productos</a></li>
+                <li><a href="#section-3">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Hero con imágenes circundantes -->
+    <section class="hero" id="section-1">
+        <img src="images/bra_original.png" alt="Imagen Principal" class="main-img">
+        <img src="images/ca.png" alt="Imagen Circundante 1" class="side-img side-img-1">
+        <img src="images/buro.png" alt="Imagen Circundante 2" class="side-img side-img-2">
+        <img src="images/cama.png" alt="Imagen Circundante 3" class="side-img side-img-3">
+        <img src="images/ca1.png" alt="Imagen Circundante 4" class="side-img side-img-4">
+        <div class="hero-text">
+        </div>
+    </section>
+
+    <!-- Sección de Productos -->
+    <section class="products" id="section-2">
+        <h2>Nuestros Productos</h2>
+        <div class="product-container">
+            <div class="product-item">
+                <img src="images/cama.png" alt="Producto 1">
+                <h3>Cabeceras Moderna</h3>
+                <p>Un respaldo eficiente para tu hogar.</p>
+                <button class="btn">Ver mas Comunicate<br>con nosotros</button>
+            </div>
+            <div class="product-item">
+                <img src="images/buro.png" alt="Producto 2">
+                <h3>Buros Elegante</h3>
+                <p>Perfecto para tu oficina en casa u hogar.</p>
+                <button class="btn">Ver mas Comunicate<br>con nosotros</button>
+            </div>
+            <div class="product-item">
+                <img src="images/rope.png" alt="Producto 3">
+                <h3>Mas Productos</h3>
+                <p>Confort y estilo en un solo lugar.<br> con la variedad que te ofrece mebleria BRAFER</p>
+                <button class="btn">Ver mas Comunicate<br>con nosotros</button>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section class="about" id="section-3">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una empresa dedicada a la fabricación de muebles de alta calidad.<br>
+        como lo son Cabeceras, Buros, Tocadores, Baces,etc</p>
+    </section>
+
+    <!-- Sección Contacto 
+    <section class="contact" id="section-4">
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Correo">
+            <textarea placeholder="Mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>-->
+
+    <footer>
+        <p>&copy; AMPUERO version 1.0</p>
+    </footer>
+
+    <!-- Caja flotante con el texto "Contáctanos" y el botón -->
+    <div class="floating-contact">
+        <h2>Contáctanos</h2>
+    </div>
+
+    <!-- Script para el botón flotante de Formspree -->
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script>
+      window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+      formbutton("create", {
+        action: "https://formspree.io/f/xeojbgvg",
+        title: "¿Cómo podemos ayudarte?",  
+        fields: [
+          { 
+            type: "email", 
+            label: "Correo:", 
+            name: "email",
+            required: true,
+            placeholder: "tu@correo.com"
+          },
+          {
+            type: "textarea",
+            label: "Mensaje:",
+            name: "message",
+            placeholder: "Escribe tu mensaje",
+          },
+          { type: "submit" }      
+        ],
+        styles: {
+          title: {
+            backgroundColor: "gray",
+            fontSize: "20px",
+            color: "white",
+            textAlign: "center",
+            paddingBottom: "10px"
+          },
+          button: {
+            backgroundColor: "gray"
+          }
+        }
+      });
+    </script>
+
+    <script src="main.js"></script>
+</body>
+</html> 

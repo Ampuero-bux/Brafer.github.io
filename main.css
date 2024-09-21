@@ -1,0 +1,182 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #205043   ;
+    color: #222;
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #205043;
+    color: rgb(249, 241, 241);
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero .main-img {
+    position: relative;
+    width: 40%;
+    border-radius: 10px;
+    z-index: 10;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero .side-img {
+    position: absolute;
+    width: 15%;
+    opacity: 0.9;
+    transition: transform 0.3s ease-in-out;
+}
+
+.side-img-1 {
+    top: 10%;
+    left: 10%;
+}
+
+.side-img-2 {
+    top: 10%;
+    right: 10%;
+}
+
+.side-img-3 {
+    bottom: 10%;
+    left: 10%;
+}
+
+.side-img-4 {
+    bottom: 10%;
+    right: 10%;
+}
+
+.hero-text {
+    z-index: 20;
+}
+
+.products, .about, .contact {
+    padding: 2rem;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    width: 30%;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-item:hover img {
+    transform: scale(1.1);
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #205043;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #205043;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Efectos de Rotación */
+.side-img {
+    transform-origin: center;
+}
